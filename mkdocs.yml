@@ -1,0 +1,75 @@
+site_name: Ingestia Docs
+site_description: Technical documentation for the Ingestia Data Framework
+site_author: Adler Technology
+site_url: http://localhost:8000
+
+repo_name: ingestia/ingestia-docs
+repo_url: https://github.com/ingestia/ingestia-docs
+
+theme:
+  name: material
+  language: en
+
+  logo: assets/logo.png
+  favicon: assets/favicon.png
+
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - content.code.copy
+    - toc.follow
+    - search.suggest
+    - search.highlight
+
+  palette:
+    - scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+    - scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - Home:
+      - Overview: 01-home/overview.md
+
+  - Foundations:
+      - Philosophy: 02-foundations/philosophy.md
+      - Architecture: 02-foundations/architecture.md
+      - Naming conventions: 02-foundations/naming-conventions.md
+
+  - Model:
+      - Layering strategy: 03-model/layering.md
+      - Metadata-driven model: 03-model/metadata-driven.md
+
+  - Execution:
+      - Ingest engine: 04-execution/ingest-engine.md
+      - Batching & control columns: 04-execution/batching.md
+      - Constraints & integrity: 04-execution/constraints.md
+      - Data quality & quarantine: 04-execution/data-quality.md
+
+  - Guidelines:
+      - Patterns & anti-patterns: 05-guidelines/patterns.md
+
+  - Appendix:
+      - Glossary: 99-appendix/glossary.md
