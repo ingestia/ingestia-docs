@@ -1,7 +1,7 @@
 site_name: Ingestia Documentation
 site_description: Technical documentation for the Ingestia Data Framework
 site_author: Adler Technology
-site_url: http://localhost:8000
+site_url: https://ingestia.org
 
 repo_name: ingestia/ingestia-docs
 repo_url: https://github.com/ingestia/ingestia-docs

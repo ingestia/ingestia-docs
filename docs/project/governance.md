@@ -2,8 +2,7 @@
 
 ## Maintainer
 
-**Adler Teodoro**  
-Founder of Adler Technology  
+**Adler Teodoro**
 Creator and Lead Architect of Ingestia  
 
 Contact:
