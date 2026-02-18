@@ -54,15 +54,31 @@
   color: rgba(237, 239, 242, 0.65) !important;
 }
 
-/* 4) Logo: aumentar para não “sumir” */
-/* FORCE: aumenta o logo do header (Material) */
-.md-header__button.md-logo img,
-.md-header__button.md-logo svg {
-  height: 48px !important;   /* ajuste aqui */
-  width: auto !important;
-  max-height: none !important;
+/* 1) Centraliza TUDO no header verticalmente */
+.md-header__inner {
+  display: flex !important;
+  align-items: center !important;
 }
 
+/* 2) Centraliza especificamente o botão do logo */
+.md-header__button.md-logo {
+  display: flex !important;
+  align-items: center !important;
+  height: var(--md-header-height) !important;
+  padding: 0 0.6rem 0 0 !important;
+}
+
+/* 3) Ajuste do tamanho do logo */
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+  height: 48px !important;
+  width: auto !important;
+}
+
+/* 4) Micro-ajuste fino (PNG quase sempre precisa) */
+.md-header__button.md-logo img {
+  transform: translateY(2px) !important;  /* teste 1px, 2px ou 3px */
+}
 /* Um leve “pop” no logo (opcional, ajuda no contraste) */
 .md-header__button.md-logo img {
   filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.35));
@@ -119,23 +135,37 @@
   filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.35));
 }
 
-/* Remove "Made with Material for MkDocs" */
+
+/* =========================================================
+   Custom Footer – Ingestia (compact + subtle)
+   ========================================================= */
+
+/* Remove footer padrão */
 .md-footer-meta__inner {
   display: none;
 }
 
-/* Adiciona footer custom */
+/* Base container */
 .md-footer-meta {
-  padding: 0.8rem 0;
+  padding: 0.6rem 0;
+  text-align: center;
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+  font-size: 0.75rem;
+  letter-spacing: 0.3px;
 }
 
-.md-footer-meta::before {
-  content: "© Adler Technology — Data Architecture & Analytics Consulting · Ingestia Docs";
-  display: block;
-  text-align: center;
-  color: rgba(237, 239, 242, 0.65);
-  font-size: 0.8rem;
+/* Texto - Dark mode */
+[data-md-color-scheme="slate"] .md-footer-meta::before {
+  content: "Ingestia · Created by Adler Teodoro · Adler Technology";
+  color: rgba(255, 255, 255, 0.87) !important;;
 }
+
+/* Texto - Light mode */
+[data-md-color-scheme="default"] .md-footer-meta::before {
+  content: "Ingestia · Created by Adler Teodoro · Adler Technology";
+  color: rgba(255, 255, 255, 0.87) !important;;
+}
+
 
 /* =========================
    TEXT CONTRAST TUNING
@@ -187,4 +217,39 @@
   .md-footer-meta {
     color: rgba(0, 0, 0, 0.6) !important;
   }
+}
+
+/* =========================
+   Ingestia Admonition (Under Development)
+   ========================= */
+
+/* Base (note) */
+.md-typeset .admonition.note,
+.md-typeset details.note {
+  border-color: #F04000 !important; /* laranja ingestia */
+}
+
+/* Título */
+.md-typeset .admonition.note > .admonition-title,
+.md-typeset details.note > .admonition-title {
+  background-color: rgba(240, 64, 0, 0.12) !important;
+  color: #F04000 !important;
+}
+
+/* Ícone */
+.md-typeset .admonition.note > .admonition-title::before,
+.md-typeset details.note > .admonition-title::before {
+  background-color: #F04000 !important;
+}
+
+/* DARK */
+[data-md-color-scheme="slate"] 
+.md-typeset .admonition.note > .admonition-title {
+  background-color: rgba(240, 64, 0, 0.18) !important;
+}
+
+/* LIGHT */
+[data-md-color-scheme="default"] 
+.md-typeset .admonition.note > .admonition-title {
+  background-color: rgba(240, 64, 0, 0.08) !important;
 }

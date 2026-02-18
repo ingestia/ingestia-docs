@@ -1,4 +1,4 @@
-site_name: Ingestia Docs
+site_name: Ingestia Documentation
 site_description: Technical documentation for the Ingestia Data Framework
 site_author: Adler Technology
 site_url: http://localhost:8000
@@ -10,13 +10,14 @@ theme:
   name: material
   language: en
 
-  logo: assets/logo.png
-  favicon: assets/favicon.png
+  logo: assets/logo-ingestia-text.png
+  favicon: assets/logo-ingestia-favicon.png
 
   features:
     - navigation.instant
     - navigation.tracking
     - navigation.top
+    - navigation.expand
     - content.code.copy
     - toc.follow
     - search.suggest
@@ -50,26 +51,27 @@ extra_css:
   - stylesheets/extra.css
 
 nav:
-  - Home:
-      - Overview: 01-home/overview.md
+  - Project:
+    - Overview: project/overview.md
+    - Governance: project/governance.md
 
   - Foundations:
-      - Philosophy: 02-foundations/philosophy.md
-      - Architecture: 02-foundations/architecture.md
-      - Naming conventions: 02-foundations/naming-conventions.md
+      - Philosophy: foundations/philosophy.md
+      - Architecture: foundations/architecture.md
+      - Naming conventions: foundations/naming-conventions.md
 
   - Model:
-      - Layering strategy: 03-model/layering.md
-      - Metadata-driven model: 03-model/metadata-driven.md
+      - Layering strategy: model/layering.md
+      - Metadata-driven model: model/metadata-driven.md
 
   - Execution:
-      - Ingest engine: 04-execution/ingest-engine.md
-      - Batching & control columns: 04-execution/batching.md
-      - Constraints & integrity: 04-execution/constraints.md
-      - Data quality & quarantine: 04-execution/data-quality.md
+      - Ingest engine: execution/ingest-engine.md
+      - Batching & control columns: execution/batching.md
+      - Constraints & integrity: execution/constraints.md
+      - Data quality & quarantine: execution/data-quality.md
 
   - Guidelines:
-      - Patterns & anti-patterns: 05-guidelines/patterns.md
+      - Patterns & anti-patterns: guidelines/patterns.md
 
   - Appendix:
-      - Glossary: 99-appendix/glossary.md
+      - Glossary: appendix/glossary.md

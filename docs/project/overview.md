@@ -99,3 +99,13 @@ This documentation describes:
 
 If your goal is to deliver fast without sacrificing standards,  
 Ingestia was built for that purpose.
+
+---
+
+## About the Author
+
+Ingestia was designed and developed by **Adler Teodoro de Souza**,  
+Data Architect and founder of Adler Technology.
+
+For collaboration, feedback, or consulting inquiries:  
+[LinkedIn](https://www.linkedin.com/in/adlerteodoro/)
