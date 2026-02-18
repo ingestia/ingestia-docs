@@ -156,13 +156,13 @@
 
 /* Texto - Dark mode */
 [data-md-color-scheme="slate"] .md-footer-meta::before {
-  content: "Ingestia · Created by Adler Teodoro · Adler Technology";
+  content: "Ingestia · Created by Adler Teodoro";
   color: rgba(255, 255, 255, 0.87) !important;;
 }
 
 /* Texto - Light mode */
 [data-md-color-scheme="default"] .md-footer-meta::before {
-  content: "Ingestia · Created by Adler Teodoro · Adler Technology";
+  content: "Ingestia · Created by Adler Teodoro";
   color: rgba(255, 255, 255, 0.87) !important;;
 }
 
