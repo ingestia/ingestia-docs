@@ -8,7 +8,7 @@ Creator and Lead Architect of Ingestia
 Contact:
 
 - LinkedIn: [Adler Teodoro](https://www.linkedin.com/in/adlerteodoro/)
-- Email: [adler@adler.technology](mailto:adler@adler.technology)
+- Email: [teodoro@adler.technology](mailto:teodoro@adler.technology)
 
 The maintainer is responsible for the architectural direction, standards, and evolution of the Ingestia framework.
 

@@ -22,6 +22,7 @@ theme:
     - toc.follow
     - search.suggest
     - search.highlight
+    - content.mermaid
 
   palette:
     - scheme: slate
@@ -44,8 +45,13 @@ markdown_extensions:
   - toc:
       permalink: true
   - pymdownx.details
-  - pymdownx.superfences
   - pymdownx.highlight
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
 
 extra_css:
   - stylesheets/extra.css
@@ -62,10 +68,11 @@ nav:
 
   - Model:
       - Layering strategy: model/layering.md
-      - Metadata-driven model: model/metadata-driven.md
+      - Metadata-driven architecture: model/metadata-driven-architecture.md
 
   - Execution:
       - Ingest engine: execution/ingest-engine.md
+      - Metadata model structure: execution/metadata-model-structure.md
       - Batching & control columns: execution/batching.md
       - Constraints & integrity: execution/constraints.md
       - Data quality & quarantine: execution/data-quality.md
