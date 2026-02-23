@@ -15,17 +15,17 @@
         <link rel="canonical" href="https://ingestia.org/execution/ingest-engine/">
       
       
-        <link rel="prev" href="../../model/metadata-driven/">
+        <link rel="prev" href="../../model/metadata-driven-architecture/">
       
       
-        <link rel="next" href="../batching/">
+        <link rel="next" href="../metadata-model-structure/">
       
       
         
       
       
       <link rel="icon" href="../../assets/logo-ingestia-favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.2">
     
     
       
@@ -593,14 +593,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/metadata-driven/" class="md-nav__link">
+      <a href="../../model/metadata-driven-architecture/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Metadata-driven model
+    Metadata-driven architecture
   
 
     
@@ -686,6 +686,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ingest engine
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -703,6 +721,191 @@
 
       </a>
       
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#design-principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Design Principles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conceptual-execution-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conceptual Execution Flow
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-ingest-contract" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The ingest() Contract
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#write-modes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Write Modes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Write Modes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#append" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        append
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#overwrite" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        overwrite
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#merge-future-ready" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        merge (future-ready)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#control-and-operational-metadata" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Control and Operational Metadata
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#idempotency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Idempotency
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#error-handling-philosophy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Error Handling Philosophy
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#layer-awareness" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Layer Awareness
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scope-boundaries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scope Boundaries
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../metadata-model-structure/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Metadata model structure
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -987,6 +1190,152 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#design-principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Design Principles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conceptual-execution-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conceptual Execution Flow
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-ingest-contract" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The ingest() Contract
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#write-modes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Write Modes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Write Modes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#append" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        append
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#overwrite" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        overwrite
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#merge-future-ready" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        merge (future-ready)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#control-and-operational-metadata" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Control and Operational Metadata
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#idempotency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Idempotency
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#error-handling-philosophy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Error Handling Philosophy
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#layer-awareness" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Layer Awareness
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scope-boundaries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scope Boundaries
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1006,10 +1355,154 @@
 
 
 <h1 id="ingest-engine">Ingest Engine<a class="headerlink" href="#ingest-engine" title="Permanent link">&para;</a></h1>
-<div class="admonition note">
-<p class="admonition-title">Section under development</p>
-<p>This module is fully designed. Detailed documentation is being progressively published.</p>
-</div>
+<p>The Ingest Engine is the execution core of the Ingestia framework.</p>
+<p>It translates declarative metadata into deterministic, controlled, and reproducible data operations.</p>
+<p>Ingestia is not a collection of notebooks — it is a metadata-driven execution engine.</p>
+<hr />
+<h2 id="design-principles">Design Principles<a class="headerlink" href="#design-principles" title="Permanent link">&para;</a></h2>
+<p>The Ingest Engine is built on the following principles:</p>
+<ul>
+<li>Metadata over hardcode  </li>
+<li>Deterministic execution  </li>
+<li>Idempotent by design  </li>
+<li>Explicit operational metadata  </li>
+<li>Clear separation between business and technical columns  </li>
+<li>Layer-aware processing  </li>
+</ul>
+<hr />
+<h2 id="conceptual-execution-flow">Conceptual Execution Flow<a class="headerlink" href="#conceptual-execution-flow" title="Permanent link">&para;</a></h2>
+<p>The engine follows a predictable and deterministic execution pipeline.</p>
+<pre class="mermaid"><code>
+%%{init: { 
+  "theme": "base",
+  "flowchart": { "nodeSpacing": 20, "rankSpacing": 25, "curve": "basis" },
+  "themeVariables": {
+    "mainBkg": "transparent",
+    "lineColor": "#9a9a9a",
+    "fontSize": "14px"
+  }
+}}%%
+
+flowchart TD
+
+  classDef default fill:transparent,stroke-width:1px,color:#d7d7d7;
+  classDef decision fill:transparent,stroke-width:1px,color:#d7d7d7;
+
+  A[Receive Source DataFrame + Metadata] --&gt; B[Parse Metadata Dictionary]
+  B --&gt; C[Validate Structural Requirements]
+  C --&gt; D[Apply Column Transformations]
+  D --&gt; E[Add Control Columns]
+
+  E --&gt; F{Constraints Enabled?}
+  F -- Yes --&gt; G[Apply Constraint Validation]
+  F -- No --&gt; H[Skip Constraint Layer]
+
+  G --&gt; I[Apply Partition Logic]
+  H --&gt; I
+
+  I --&gt; J[Execute Write Mode]
+  J --&gt; K[Return Structured Execution Result]
+
+  class F decision
+</code></pre>
+<p>Each step is explicitly derived from metadata definitions.</p>
+<hr />
+<h2 id="the-ingest-contract">The <code>ingest()</code> Contract<a class="headerlink" href="#the-ingest-contract" title="Permanent link">&para;</a></h2>
+<p>The engine is executed through a single entry point:</p>
+<p><code>ingest()</code></p>
+<p>Conceptually, it receives:</p>
+<ul>
+<li>a source dataset  </li>
+<li>a metadata definition  </li>
+<li>execution configuration  </li>
+<li>optional runtime parameters  </li>
+</ul>
+<p>The metadata determines:</p>
+<ul>
+<li>column structure  </li>
+<li>key definitions  </li>
+<li>partition strategy  </li>
+<li>write mode  </li>
+<li>constraint behavior  </li>
+<li>operational column handling  </li>
+</ul>
+<p>The engine does not infer business logic.<br />
+All structural decisions must be declared.</p>
+<hr />
+<h2 id="write-modes">Write Modes<a class="headerlink" href="#write-modes" title="Permanent link">&para;</a></h2>
+<p>Write behavior is explicitly declared in metadata.</p>
+<h3 id="append">append<a class="headerlink" href="#append" title="Permanent link">&para;</a></h3>
+<p>Adds new records without removing existing data.</p>
+<h3 id="overwrite">overwrite<a class="headerlink" href="#overwrite" title="Permanent link">&para;</a></h3>
+<p>Replaces target content based on declared strategy.</p>
+<h3 id="merge-future-ready">merge (future-ready)<a class="headerlink" href="#merge-future-ready" title="Permanent link">&para;</a></h3>
+<p>Supports key-based upsert logic when primary keys are defined.</p>
+<p>The engine never infers write behavior.</p>
+<hr />
+<h2 id="control-and-operational-metadata">Control and Operational Metadata<a class="headerlink" href="#control-and-operational-metadata" title="Permanent link">&para;</a></h2>
+<p>The engine manages operational traceability through reserved columns such as:</p>
+<ul>
+<li><code>_batch_id</code>  </li>
+<li><code>_ingestion_id</code>  </li>
+<li><code>_ingestion_dt</code>  </li>
+<li><code>_partition_&lt;column_name&gt;</code>  </li>
+</ul>
+<p>These enable:</p>
+<ul>
+<li>idempotent execution  </li>
+<li>incremental strategies  </li>
+<li>traceability  </li>
+<li>deterministic reprocessing  </li>
+</ul>
+<p>Operational columns are never considered business attributes.</p>
+<hr />
+<h2 id="idempotency">Idempotency<a class="headerlink" href="#idempotency" title="Permanent link">&para;</a></h2>
+<p>Ingestia is designed to avoid inconsistent states.</p>
+<p>Idempotency is achieved through:</p>
+<ul>
+<li>deterministic batch identification  </li>
+<li>explicit write strategies  </li>
+<li>metadata-controlled partition logic  </li>
+<li>structured execution boundaries  </li>
+</ul>
+<p>Reprocessing the same batch under the same metadata must produce the same result.</p>
+<hr />
+<h2 id="error-handling-philosophy">Error Handling Philosophy<a class="headerlink" href="#error-handling-philosophy" title="Permanent link">&para;</a></h2>
+<p>The engine does not silently ignore structural violations.</p>
+<p>Execution results are structured and explicit:</p>
+<ul>
+<li>status  </li>
+<li>validation messages  </li>
+<li>execution metadata  </li>
+<li>processing metrics  </li>
+</ul>
+<p>Failure is visible and traceable.</p>
+<p>Future extensions may introduce severity levels such as:</p>
+<ul>
+<li>ERROR  </li>
+<li>WARN  </li>
+<li>QUARANTINE  </li>
+<li>SKIP  </li>
+</ul>
+<hr />
+<h2 id="layer-awareness">Layer Awareness<a class="headerlink" href="#layer-awareness" title="Permanent link">&para;</a></h2>
+<p>The engine respects logical layer boundaries:</p>
+<ul>
+<li>Raw layer → minimal structural enforcement  </li>
+<li>Transformation layer → standardization and structural rules  </li>
+<li>Serving layer → consumption-oriented datasets  </li>
+</ul>
+<p>The engine enforces structure but does not dictate modeling methodology.</p>
+<hr />
+<h2 id="scope-boundaries">Scope Boundaries<a class="headerlink" href="#scope-boundaries" title="Permanent link">&para;</a></h2>
+<p>The Ingest Engine does not:</p>
+<ul>
+<li>enforce surrogate key usage  </li>
+<li>impose modeling frameworks (Kimball, Inmon, etc.)  </li>
+<li>manage semantic layer logic  </li>
+<li>dictate enterprise governance models  </li>
+</ul>
+<p>It focuses strictly on deterministic ingestion and structural enforcement.</p>
 
 
 
@@ -1065,7 +1558,7 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.top", "navigation.expand", "content.code.copy", "toc.follow", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.top", "navigation.expand", "content.code.copy", "toc.follow", "search.suggest", "search.highlight", "content.mermaid"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>

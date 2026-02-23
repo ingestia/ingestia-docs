@@ -25,7 +25,7 @@
       
       
       <link rel="icon" href="../../assets/logo-ingestia-favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.2">
     
     
       
@@ -490,6 +490,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Naming conventions
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -506,6 +524,130 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#physical-and-logical-naming" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Physical and Logical Naming
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#layer-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Layer Structure
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#framework-reserved-columns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Framework-Reserved Columns
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partitioning-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Partitioning Rules
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-suffixes-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Suffixes (Optional)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pk-and-fk-naming-consistency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PK and FK Naming Consistency
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PK and FK Naming Consistency">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-pk-fk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example (PK = FK)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#delta-table-naming-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Delta Table Naming Requirements
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ingestia-naming-convention-template" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ingestia Naming Convention Template
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -603,14 +745,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/metadata-driven/" class="md-nav__link">
+      <a href="../../model/metadata-driven-architecture/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Metadata-driven model
+    Metadata-driven architecture
   
 
     
@@ -695,6 +837,34 @@
     
   
     Ingest engine
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../execution/metadata-model-structure/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Metadata model structure
   
 
     
@@ -987,6 +1157,119 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#physical-and-logical-naming" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Physical and Logical Naming
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#layer-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Layer Structure
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#framework-reserved-columns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Framework-Reserved Columns
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partitioning-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Partitioning Rules
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-suffixes-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Suffixes (Optional)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pk-and-fk-naming-consistency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PK and FK Naming Consistency
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PK and FK Naming Consistency">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-pk-fk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example (PK = FK)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#delta-table-naming-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Delta Table Naming Requirements
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ingestia-naming-convention-template" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ingestia Naming Convention Template
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1006,9 +1289,162 @@
 
 
 <h1 id="naming-conventions">Naming Conventions<a class="headerlink" href="#naming-conventions" title="Permanent link">&para;</a></h1>
+<p>Ingestia does not enforce a single naming convention for your entire data platform.<br />
+However, a consistent naming strategy is required to ensure clarity, automation, and reliability.</p>
+<p>The framework reserves only a small set of mandatory patterns required for its internal operation.<br />
+Outside of those reserved patterns, organizations are free to adopt their own standards — as long as they remain consistent.</p>
+<hr />
+<h2 id="physical-and-logical-naming">Physical and Logical Naming<a class="headerlink" href="#physical-and-logical-naming" title="Permanent link">&para;</a></h2>
+<p>In Ingestia, physical and logical names are identical.</p>
+<p>There is no abstraction or aliasing layer between catalog objects and pipeline references.<br />
+The name defined in the catalog is the name used by the engine.</p>
+<hr />
+<h2 id="layer-structure">Layer Structure<a class="headerlink" href="#layer-structure" title="Permanent link">&para;</a></h2>
+<p>The conceptual responsibilities of each layer are described in <em>Layering Strategy</em>.<br />
+Below is how naming may reflect that structure.</p>
+<table>
+<thead>
+<tr>
+<th>Logical Layer</th>
+<th>Suggested Schema / Prefix Pattern</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Raw</td>
+<td><code>raw_&lt;domain&gt;.&lt;object&gt;</code></td>
+</tr>
+<tr>
+<td>Transformation</td>
+<td><code>transformation_&lt;domain&gt;.&lt;object&gt;</code></td>
+</tr>
+<tr>
+<td>└– Conformed</td>
+<td><code>transformation_&lt;domain&gt;.&lt;object&gt;_conformed</code></td>
+</tr>
+<tr>
+<td>Serving</td>
+<td><code>serving_&lt;subject&gt;.&lt;object&gt;</code></td>
+</tr>
+</tbody>
+</table>
+<p>Ingestia does not enforce these exact prefixes, but consistency within the environment is required.</p>
+<hr />
+<h2 id="framework-reserved-columns">Framework-Reserved Columns<a class="headerlink" href="#framework-reserved-columns" title="Permanent link">&para;</a></h2>
+<p>Framework-controlled columns must begin with an underscore.</p>
+<p>Typical examples:</p>
+<p><code>_batch_id</code><br />
+<code>_ingestion_id</code><br />
+<code>_ingestion_dt</code><br />
+<code>_source_file</code><br />
+<code>_partition_&lt;column_name&gt;</code></p>
+<p>Mandatory rules:</p>
+<ul>
+<li>lowercase only  </li>
+<li>snake_case  </li>
+<li>explicit and readable naming  </li>
+</ul>
+<p>Columns starting with an underscore are considered operational or technical.<br />
+Columns without underscore are considered business attributes.</p>
+<hr />
+<h2 id="partitioning-rules">Partitioning Rules<a class="headerlink" href="#partitioning-rules" title="Permanent link">&para;</a></h2>
+<p>When a technical partition column is required, it must follow this exact pattern:</p>
+<p><code>_partition_&lt;column_name&gt;</code></p>
+<p>Example:</p>
+<p><code>_partition_year_month</code></p>
+<p>Rules:</p>
+<ul>
+<li>snake_case  </li>
+<li>lowercase  </li>
+<li>written in full words  </li>
+<li>avoid ambiguous abbreviations (for example, avoid _partition_yyyymm)  </li>
+</ul>
+<p>Partition columns are always considered operational metadata, not business attributes.</p>
+<hr />
+<h2 id="key-suffixes-optional">Key Suffixes (Optional)<a class="headerlink" href="#key-suffixes-optional" title="Permanent link">&para;</a></h2>
+<p>If your organization uses suffixes to differentiate key types, common patterns include:</p>
+<p><code>_cd</code> → natural key / business code<br />
+<code>_id</code> → surrogate key / technical identifier  </p>
+<p>These suffixes are not required by Ingestia.<br />
+Other naming patterns may be used, provided they remain consistent across the environment.</p>
+<hr />
+<h2 id="pk-and-fk-naming-consistency">PK and FK Naming Consistency<a class="headerlink" href="#pk-and-fk-naming-consistency" title="Permanent link">&para;</a></h2>
+<p>A recommended best practice:</p>
+<p>The name of the primary key (PK) in the dimension should be exactly the same as the foreign key (FK) in the fact table.</p>
+<p>This improves readability, simplifies joins, and reduces ambiguity across the model.</p>
+<p><em>Ingestia strongly recommends this practice</em>, but does not enforce it.</p>
+<h3 id="example-pk-fk">Example (PK = FK)<a class="headerlink" href="#example-pk-fk" title="Permanent link">&para;</a></h3>
+<pre class="mermaid"><code>%%{init: { "theme": "base", "themeVariables": {
+  "fontFamily": "Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial",
+  "fontSize": "14px"
+}}}%%
+
+erDiagram
+  product {
+    int product_id PK
+    string ean_cd
+    string product_nm
+    string brand_nm
+    string category_nm
+  }
+
+  store {
+    int store_id PK
+    string store_cd
+    string store_nm
+    string city_nm
+    string state_cd
+  }
+
+  customer {
+    int customer_id PK
+    string customer_nm
+    string segment_nm
+  }
+
+  period {
+    int period_id PK
+    int year_nr
+    int month_nr
+    date period_start_dt
+  }
+
+  sellout {
+    bigint sellout_id PK
+    int period_id FK
+    int product_id FK
+    int store_id FK
+    int customer_id FK
+    float sellout_qt
+    float sellout_vl
+    string data_provider_cd
+    datetime ingestion_ts
+  }
+
+  product  ||--o{ sellout : has
+  store    ||--o{ sellout : has
+  customer ||--o{ sellout : has
+  period   ||--o{ sellout : has
+</code></pre>
+<hr />
+<h2 id="delta-table-naming-requirements">Delta Table Naming Requirements<a class="headerlink" href="#delta-table-naming-requirements" title="Permanent link">&para;</a></h2>
+<p>Tables and columns must comply with valid Delta Lake and Databricks naming rules.</p>
+<p>In general:</p>
+<ul>
+<li>no spaces  </li>
+<li>avoid special characters (except underscore)  </li>
+<li>do not start names with numbers  </li>
+<li>avoid SQL reserved keywords  </li>
+</ul>
+<p>For the official and most up-to-date rules regarding valid identifiers, refer to the Databricks SQL documentation:</p>
+<p>Databricks SQL Language Manual – Object Names<br />
+<a href="https://learn.microsoft.com/azure/databricks/sql/language-manual/sql-ref-names">https://learn.microsoft.com/azure/databricks/sql/language-manual/sql-ref-names</a></p>
+<p>Ensuring compliance with these rules guarantees compatibility with Delta Lake operations, catalog management, and automated execution within Ingestia.</p>
+<hr />
+<h2 id="ingestia-naming-convention-template">Ingestia Naming Convention Template<a class="headerlink" href="#ingestia-naming-convention-template" title="Permanent link">&para;</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Section under development</p>
-<p>This module is fully designed. Detailed documentation is being progressively published.</p>
+<p>A formal version of the <em>Ingestia Style</em> naming convention may be published in the future.</p>
 </div>
 
 
@@ -1065,7 +1501,7 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.top", "navigation.expand", "content.code.copy", "toc.follow", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.top", "navigation.expand", "content.code.copy", "toc.follow", "search.suggest", "search.highlight", "content.mermaid"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>

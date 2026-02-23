@@ -2,58 +2,66 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://ingestia.org/</loc>
-         <lastmod>2026-02-18</lastmod>
+         <lastmod>2026-02-23</lastmod>
     </url>
     <url>
          <loc>https://ingestia.org/appendix/glossary/</loc>
-         <lastmod>2026-02-18</lastmod>
+         <lastmod>2026-02-23</lastmod>
     </url>
     <url>
          <loc>https://ingestia.org/execution/batching/</loc>
-         <lastmod>2026-02-18</lastmod>
+         <lastmod>2026-02-23</lastmod>
     </url>
     <url>
          <loc>https://ingestia.org/execution/constraints/</loc>
-         <lastmod>2026-02-18</lastmod>
+         <lastmod>2026-02-23</lastmod>
     </url>
     <url>
          <loc>https://ingestia.org/execution/data-quality/</loc>
-         <lastmod>2026-02-18</lastmod>
+         <lastmod>2026-02-23</lastmod>
     </url>
     <url>
          <loc>https://ingestia.org/execution/ingest-engine/</loc>
-         <lastmod>2026-02-18</lastmod>
+         <lastmod>2026-02-23</lastmod>
+    </url>
+    <url>
+         <loc>https://ingestia.org/execution/metadata-model-structure/</loc>
+         <lastmod>2026-02-23</lastmod>
     </url>
     <url>
          <loc>https://ingestia.org/foundations/architecture/</loc>
-         <lastmod>2026-02-18</lastmod>
+         <lastmod>2026-02-23</lastmod>
     </url>
     <url>
          <loc>https://ingestia.org/foundations/naming-conventions/</loc>
-         <lastmod>2026-02-18</lastmod>
+         <lastmod>2026-02-23</lastmod>
     </url>
     <url>
          <loc>https://ingestia.org/foundations/philosophy/</loc>
-         <lastmod>2026-02-18</lastmod>
+         <lastmod>2026-02-23</lastmod>
+    </url>
+    <url>
+         <loc>https://ingestia.org/guidelines/driagrams/</loc>
+         <lastmod>2026-02-23</lastmod>
     </url>
     <url>
          <loc>https://ingestia.org/guidelines/patterns/</loc>
-         <lastmod>2026-02-18</lastmod>
+         <lastmod>2026-02-23</lastmod>
     </url>
     <url>
          <loc>https://ingestia.org/model/layering/</loc>
-         <lastmod>2026-02-18</lastmod>
+         <lastmod>2026-02-23</lastmod>
     </url>
     <url>
-         <loc>https://ingestia.org/model/metadata-driven/</loc>
-         <lastmod>2026-02-18</lastmod>
+         <loc>https://ingestia.org/model/metadata-driven-architecture/</loc>
+         <lastmod>2026-02-23</lastmod>
     </url>
     <url>
          <loc>https://ingestia.org/project/governance/</loc>
-         <lastmod>2026-02-18</lastmod>
+         <lastmod>2026-02-23</lastmod>
     </url>
     <url>
          <loc>https://ingestia.org/project/overview/</loc>
-         <lastmod>2026-02-18</lastmod>
+         <lastmod>2026-02-23</lastmod>
     </url>
 </urlset>

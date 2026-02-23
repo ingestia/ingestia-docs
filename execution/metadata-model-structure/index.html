@@ -12,24 +12,24 @@
         <meta name="author" content="Adler Technology">
       
       
-        <link rel="canonical" href="https://ingestia.org/model/metadata-driven/">
+        <link rel="canonical" href="https://ingestia.org/execution/metadata-model-structure/">
       
       
-        <link rel="prev" href="../layering/">
+        <link rel="prev" href="../ingest-engine/">
       
       
-        <link rel="next" href="../../execution/ingest-engine/">
+        <link rel="next" href="../batching/">
       
       
         
       
       
       <link rel="icon" href="../../assets/logo-ingestia-favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.2">
     
     
       
-        <title>Metadata-driven model - Ingestia Documentation</title>
+        <title>Metadata model structure - Ingestia Documentation</title>
       
     
     
@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#metadata-driven-model" class="md-skip">
+        <a href="#metadata-model-structure" class="md-skip">
           Skip to content
         </a>
       
@@ -117,7 +117,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Metadata-driven model
+              Metadata model structure
             
           </span>
         </div>
@@ -513,20 +513,20 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -547,7 +547,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -565,7 +565,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../layering/" class="md-nav__link">
+      <a href="../../model/layering/" class="md-nav__link">
         
   
   
@@ -573,6 +573,118 @@
     
   
     Layering strategy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../model/metadata-driven-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Metadata-driven architecture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Execution
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Execution
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ingest-engine/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ingest engine
   
 
     
@@ -609,7 +721,7 @@
   <span class="md-ellipsis">
     
   
-    Metadata-driven model
+    Metadata model structure
   
 
     
@@ -627,7 +739,7 @@
   <span class="md-ellipsis">
     
   
-    Metadata-driven model
+    Metadata model structure
   
 
     
@@ -653,10 +765,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#documentation-as-execution-input" class="md-nav__link">
+  <a href="#core-principle" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Documentation as Execution Input
+        Core Principle
       
     </span>
   </a>
@@ -664,10 +776,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#catalog-schema-and-layering" class="md-nav__link">
+  <a href="#metadata-architecture" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Catalog, Schema, and Layering
+        Metadata Architecture
       
     </span>
   </a>
@@ -675,10 +787,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#table-centric-dictionary" class="md-nav__link">
+  <a href="#table-metadata-dictionary" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Table-Centric Dictionary
+        Table Metadata Dictionary
       
     </span>
   </a>
@@ -686,10 +798,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#example-sellout-data-dictionary" class="md-nav__link">
+  <a href="#column-level-partition-strategy" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Example: Sellout Data Dictionary
+        Column-Level Partition Strategy
       
     </span>
   </a>
@@ -697,10 +809,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#separation-of-concerns" class="md-nav__link">
+  <a href="#integrity-dictionary" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Separation of Concerns
+        Integrity Dictionary
       
     </span>
   </a>
@@ -708,10 +820,32 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#why-this-matters" class="md-nav__link">
+  <a href="#execution-relationship" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Why This Matters
+        Execution Relationship
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deterministic-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deterministic Design
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scope-boundaries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scope Boundaries
       
     </span>
   </a>
@@ -727,62 +861,6 @@
 
               
             
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
-        
-          
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Execution
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Execution
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
               
                 
   
@@ -790,35 +868,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../execution/ingest-engine/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Ingest engine
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../execution/batching/" class="md-nav__link">
+      <a href="../batching/" class="md-nav__link">
         
   
   
@@ -846,7 +896,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../execution/constraints/" class="md-nav__link">
+      <a href="../constraints/" class="md-nav__link">
         
   
   
@@ -874,7 +924,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../execution/data-quality/" class="md-nav__link">
+      <a href="../data-quality/" class="md-nav__link">
         
   
   
@@ -1097,10 +1147,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#documentation-as-execution-input" class="md-nav__link">
+  <a href="#core-principle" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Documentation as Execution Input
+        Core Principle
       
     </span>
   </a>
@@ -1108,10 +1158,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#catalog-schema-and-layering" class="md-nav__link">
+  <a href="#metadata-architecture" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Catalog, Schema, and Layering
+        Metadata Architecture
       
     </span>
   </a>
@@ -1119,10 +1169,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#table-centric-dictionary" class="md-nav__link">
+  <a href="#table-metadata-dictionary" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Table-Centric Dictionary
+        Table Metadata Dictionary
       
     </span>
   </a>
@@ -1130,10 +1180,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#example-sellout-data-dictionary" class="md-nav__link">
+  <a href="#column-level-partition-strategy" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Example: Sellout Data Dictionary
+        Column-Level Partition Strategy
       
     </span>
   </a>
@@ -1141,10 +1191,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#separation-of-concerns" class="md-nav__link">
+  <a href="#integrity-dictionary" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Separation of Concerns
+        Integrity Dictionary
       
     </span>
   </a>
@@ -1152,10 +1202,32 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#why-this-matters" class="md-nav__link">
+  <a href="#execution-relationship" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Why This Matters
+        Execution Relationship
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deterministic-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deterministic Design
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scope-boundaries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scope Boundaries
       
     </span>
   </a>
@@ -1182,98 +1254,193 @@
   
 
 
-<h1 id="metadata-driven-model">Metadata-Driven Model<a class="headerlink" href="#metadata-driven-model" title="Permanent link">&para;</a></h1>
-<h2 id="documentation-as-execution-input">Documentation as Execution Input<a class="headerlink" href="#documentation-as-execution-input" title="Permanent link">&para;</a></h2>
-<p>Ingestia is built on a simple but transformative idea:</p>
-<p><strong>Metadata does not describe the system. Metadata drives the system.</strong></p>
-<p>Instead of spreading structural definitions across notebooks, pipelines, and implicit conventions, Ingestia centralizes execution parameters inside explicit dictionaries.</p>
-<p>These dictionaries are not passive documentation artifacts.</p>
-<p>They are consumed directly by the ingestion engine.</p>
+<h1 id="metadata-model-structure">Metadata Model Structure<a class="headerlink" href="#metadata-model-structure" title="Permanent link">&para;</a></h1>
+<p>Ingestia is a metadata-driven framework.</p>
+<p>All execution behavior is derived from structured metadata definitions — not from hardcoded logic inside pipelines.</p>
+<p>The Metadata Model defines how structure, constraints, and execution behavior are declared.</p>
 <hr />
-<h2 id="catalog-schema-and-layering">Catalog, Schema, and Layering<a class="headerlink" href="#catalog-schema-and-layering" title="Permanent link">&para;</a></h2>
-<p>Ingestia assumes a <strong>single catalog</strong> at the platform level.</p>
-<p>Within that catalog, schemas are defined by combining:</p>
-<div class="highlight"><pre><span></span><code>&lt;layer&gt;_&lt;domain&gt;
-</code></pre></div>
-<p>Examples:</p>
-<ul>
-<li><code>raw_sales</code></li>
-<li><code>transformation_sales</code></li>
-<li><code>serving_sales</code></li>
-</ul>
-<p>The layer comes first because lifecycle responsibility precedes business domain.</p>
-<p>This structure enforces architectural clarity at the metadata level.</p>
+<h2 id="core-principle">Core Principle<a class="headerlink" href="#core-principle" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>Data behavior must be declared, not inferred.</p>
+</blockquote>
+<p>The Ingest Engine interprets metadata definitions and translates them into deterministic operations.</p>
+<p>No structural decision is implicit.</p>
 <hr />
-<h2 id="table-centric-dictionary">Table-Centric Dictionary<a class="headerlink" href="#table-centric-dictionary" title="Permanent link">&para;</a></h2>
-<p>Ingestia does not define generic models.</p>
-<p>Each table has its own explicit dictionary.</p>
-<p>For example:</p>
+<h2 id="metadata-architecture">Metadata Architecture<a class="headerlink" href="#metadata-architecture" title="Permanent link">&para;</a></h2>
+<p>Ingestia uses a simplified and explicit metadata structure:</p>
 <ul>
-<li><code>sellout</code></li>
+<li>One metadata dictionary per table</li>
+<li>One optional integrity dictionary</li>
+<li>Partition strategy declared at column level</li>
 </ul>
-<p>The dictionary defines how this table behaves within its layer and domain.</p>
+<pre class="mermaid"><code>%%{init: { 
+  "theme": "base",
+  "flowchart": { "nodeSpacing": 26, "rankSpacing": 34, "curve": "basis" },
+  "themeVariables": {
+    "mainBkg": "transparent",
+    "fontSize": "14px"
+  }
+}}%%
+
+flowchart TB
+  classDef default fill:transparent,stroke-width:1px;
+
+  DD["data_dictionary"] --&gt; TN["table_name
+────────"]
+
+  TN --&gt; TBL["table
+────────
+catalog
+schema
+domain
+container
+description
+purpose
+write_mode
+merge_schema
+table_properties"]
+
+  TN --&gt; COLS["columns
+────────
+&lt;source_column_name&gt;
+target_column
+data_type
+nullable
+transform_expr
+key
+partition
+z_order
+delta_column"]
+
+  TN --&gt; QR["quality_rules
+────────
+&lt;rule_name&gt;
+type
+active
+severity
+expr"]
+
+  TN --&gt; CS["constraints
+────────
+&lt;constraint_name&gt;
+type
+active
+severity
+columns
+reference"]
+
+  CS --&gt; REF["reference
+────────
+catalog
+schema
+table
+columns"]</code></pre>
 <hr />
-<h2 id="example-sellout-data-dictionary">Example: Sellout Data Dictionary<a class="headerlink" href="#example-sellout-data-dictionary" title="Permanent link">&para;</a></h2>
-<p>Below is a simplified example of a dictionary used for a <code>sellout</code> table in the <code>transformation_sales</code> schema.</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">  </span><span class="nt">&quot;catalog&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;main&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;layer&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;transformation&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;domain&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;sales&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;table&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;sellout&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;purpose&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;standardized&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;write_mode&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;merge&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;enable_control_columns&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;partition_by&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;period_id&quot;</span><span class="p">],</span>
-<span class="w">  </span><span class="nt">&quot;columns&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;data_provider_cd&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;nullable&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w"> </span><span class="p">},</span>
-<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;period_id&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;int&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;nullable&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w"> </span><span class="p">},</span>
-<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ean_cd&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;nullable&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w"> </span><span class="p">},</span>
-<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;store_cd&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;nullable&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w"> </span><span class="p">},</span>
-<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;sellout_qt&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;decimal(18,4)&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;nullable&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="p">},</span>
-<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;sellout_vl&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;decimal(18,4)&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;nullable&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="p">}</span>
-<span class="w">  </span><span class="p">]</span>
-<span class="p">}</span>
-</code></pre></div>
-<p>This dictionary defines:</p>
+<h2 id="table-metadata-dictionary">Table Metadata Dictionary<a class="headerlink" href="#table-metadata-dictionary" title="Permanent link">&para;</a></h2>
+<p>Each table has its own metadata dictionary.</p>
+<p>It defines:</p>
 <ul>
-<li>Where the table belongs (layer + domain)</li>
-<li>How it should be written (<code>merge</code>)</li>
-<li>Whether control columns are enabled</li>
-<li>How it is partitioned</li>
-<li>The structural schema of the table</li>
+<li>target layer</li>
+<li>domain</li>
+<li>object name</li>
+<li>column structure</li>
+<li>write behavior</li>
+<li>control column activation</li>
+<li>integrity reference (optional)</li>
 </ul>
-<p>Execution logic is not hard-coded in notebooks.</p>
-<p>It is parameterized.</p>
+<p>This dictionary is the single source of truth for table behavior.</p>
 <hr />
-<h2 id="separation-of-concerns">Separation of Concerns<a class="headerlink" href="#separation-of-concerns" title="Permanent link">&para;</a></h2>
-<p>The metadata model separates:</p>
+<h2 id="column-level-partition-strategy">Column-Level Partition Strategy<a class="headerlink" href="#column-level-partition-strategy" title="Permanent link">&para;</a></h2>
+<p>Partitioning is declared directly within column definitions.</p>
+<p>There is no separate partition dictionary.</p>
+<p>If a column participates in partitioning:</p>
 <ul>
-<li>Structural definition (columns, types, nullability)</li>
-<li>Execution behavior (write mode, partitioning)</li>
-<li>Lifecycle responsibility (layer)</li>
-<li>Business alignment (domain)</li>
+<li>it is declared explicitly</li>
+<li>helper columns such as <code>_partition_&lt;column_name&gt;</code> may be generated</li>
+<li>derivation logic is deterministic</li>
 </ul>
-<p>Additional dictionaries (such as integrity definitions) extend this structure without polluting the core definition.</p>
-<p>Each concern is explicit and versionable.</p>
+<p>Partition behavior is structural, not inferred.</p>
 <hr />
-<h2 id="why-this-matters">Why This Matters<a class="headerlink" href="#why-this-matters" title="Permanent link">&para;</a></h2>
-<p>Without a metadata-driven approach:</p>
+<h2 id="integrity-dictionary">Integrity Dictionary<a class="headerlink" href="#integrity-dictionary" title="Permanent link">&para;</a></h2>
+<p>The integrity dictionary is a separate structure referenced by the table metadata.</p>
+<p>It may define:</p>
 <ul>
-<li>Schema evolution becomes inconsistent.</li>
-<li>Naming conventions drift.</li>
-<li>Integrity rules are optional.</li>
-<li>Reproducibility depends on individual developers.</li>
-<li>Governance lives outside execution.</li>
+<li>primary key rules</li>
+<li>unique combinations</li>
+<li>referential integrity</li>
+<li>structural validations</li>
 </ul>
-<p>With a metadata-driven model:</p>
+<p>This separation ensures:</p>
 <ul>
-<li>Standards are enforced.</li>
-<li>Behavior is deterministic.</li>
-<li>Architecture becomes executable.</li>
-<li>Delivery speed increases without sacrificing control.</li>
+<li>structural metadata remains clean</li>
+<li>constraint logic remains reusable</li>
+<li>integrity rules can evolve independently</li>
 </ul>
-<p>Metadata becomes the contract between architecture and execution.</p>
-<p>That contract is what makes Ingestia scalable.</p>
+<p>The integrity dictionary is optional but recommended for governed environments.</p>
+<hr />
+<h2 id="execution-relationship">Execution Relationship<a class="headerlink" href="#execution-relationship" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Responsibility</th>
+<th>Table Metadata</th>
+<th>Integrity Dictionary</th>
+<th>Engine</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Structure</td>
+<td>Yes</td>
+<td>No</td>
+<td>Executes</td>
+</tr>
+<tr>
+<td>Keys</td>
+<td>Yes</td>
+<td>May validate</td>
+<td>Executes</td>
+</tr>
+<tr>
+<td>Constraints</td>
+<td>No</td>
+<td>Yes</td>
+<td>Executes</td>
+</tr>
+<tr>
+<td>Partitioning</td>
+<td>Yes (column-level)</td>
+<td>No</td>
+<td>Executes</td>
+</tr>
+<tr>
+<td>Write Mode</td>
+<td>Yes</td>
+<td>No</td>
+<td>Executes</td>
+</tr>
+</tbody>
+</table>
+<p>The engine interprets both dictionaries during execution.</p>
+<hr />
+<h2 id="deterministic-design">Deterministic Design<a class="headerlink" href="#deterministic-design" title="Permanent link">&para;</a></h2>
+<p>Because metadata is explicit:</p>
+<ul>
+<li>execution is reproducible</li>
+<li>structural behavior is auditable</li>
+<li>engine logic remains stable</li>
+<li>changes are configuration-driven</li>
+</ul>
+<p>The engine evolves independently from metadata definitions.</p>
+<hr />
+<h2 id="scope-boundaries">Scope Boundaries<a class="headerlink" href="#scope-boundaries" title="Permanent link">&para;</a></h2>
+<p>The Metadata Model does not:</p>
+<ul>
+<li>enforce a specific modeling methodology</li>
+<li>impose naming conventions beyond reserved patterns</li>
+<li>dictate enterprise governance models</li>
+</ul>
+<p>It provides a declarative structural control plane for the Lakehouse.</p>
 
 
 
@@ -1329,7 +1496,7 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.top", "navigation.expand", "content.code.copy", "toc.follow", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.top", "navigation.expand", "content.code.copy", "toc.follow", "search.suggest", "search.highlight", "content.mermaid"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
